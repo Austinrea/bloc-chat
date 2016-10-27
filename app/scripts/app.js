@@ -1,8 +1,21 @@
-var app = angular.module("blocChat", ["firebase", "ui.router"]);
+(function() {
+ function config($stateProvider, $locationProvider) {
+    $locationProvider
+     .html5Mode({
+         enabled: true,
+         requireBase: false
+     });
 
-app.controller("blocChat", function($scope, $firebaseObject) {
-  var ref = firebase.database().ref();
-  // download the data into a local object
-  $scope.data = $firebaseObject(ref);
-  // putting a console.log here won't work, see below
-});
+    $stateProvider
+     .state('room', {
+         url: '/',
+         controller: 'RoomCtrl as room',
+         templateUrl: '/templates/room.html'
+     }));
+
+ }
+
+ angular
+     .module('blocChat', ['ui.router'])
+     .config(config);
+})();

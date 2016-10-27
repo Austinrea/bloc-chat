@@ -1,9 +1,9 @@
 (function() {
-    function RoomCtrl($firebaseArray) {
-        firebase.database().ref().child("rooms");
+    function RoomCtrl(Room) {
+        this.room = Room;
     };
 
     angular
         .module('blocChat')
-        .controller('Room', ['$firebaseArray', Room]);
+        .controller('RoomCtrl', ['Room', RoomCtrl]);
 })();
