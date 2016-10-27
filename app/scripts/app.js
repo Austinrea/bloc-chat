@@ -1,6 +1,6 @@
-var app = angular.module("SampleCtrl", ["firebase"]);
+var app = angular.module("blocChat", ["firebase", "ui.router"]);
 
-app.controller("SampleCtrl", function($scope, $firebaseObject) {
+app.controller("blocChat", function($scope, $firebaseObject) {
   var ref = firebase.database().ref();
   // download the data into a local object
   $scope.data = $firebaseObject(ref);
