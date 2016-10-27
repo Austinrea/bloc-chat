@@ -1,4 +1,4 @@
-var app = angular.module("sampleApp", ["firebase"]);
+var app = angular.module("SampleCtrl", ["firebase"]);
 
 app.controller("SampleCtrl", function($scope, $firebaseObject) {
   var ref = firebase.database().ref();
