@@ -1,6 +1,11 @@
 <section ng-controller="RoomCtrl">
-    <a ui-sref="room"> Rooms </a>
-        <ul>
-        <li ng-repeat="room in rooms">{{ rooms }}</li>
-        </ul>
+<h1 ui-sref="room"> Bloc Chat </h1>
+    <table>
+        <tr>
+            <th> Available Rooms </th>
+        </tr>
+        <tr ng-repeat="room in rooms">
+            <td>{{ rooms }}</td>
+        </tr>
+    </table>
 </section>
