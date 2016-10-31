@@ -11,7 +11,7 @@
          url: '/',
          controller: 'RoomCtrl as room',
          templateUrl: '/templates/room.html'
-     }));
+     });
 
  }
 

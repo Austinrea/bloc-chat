@@ -1,12 +1,6 @@
 <section ng-controller="RoomCtrl">
-    <div class="room-view"  ng-repeat="Room.room">
-        <table>
-            <tr>
-                <th>Bloc Chat</th>
-            </tr>
-            <tr>
-                <td>{{ Room.rooms }}</td>
-            </tr>
-        </table>
-    </div>
+    <a ui-sref="room"> Rooms </a>
+        <ul>
+        <li ng-repeat="room in rooms">{{ Room.rooms }}</li>
+        </ul>
 </section>
