@@ -1,14 +1,14 @@
 (function() {
-    function Room($firebaseArray) {
+    function Room($scope, $firebaseArray) {
         var ref = firebase.database().ref().child("rooms");
-        var rooms = $firebaseArray(ref);
+        var $scope.rooms = $firebaseArray(ref);
 
 	    if (rooms.length == 0) {
-	        rooms = ["Room1", "Room2"];
+	        $scope.rooms = ["Room1", "Room2"];
 	    }
 
         return {
-            all: rooms
+            all: $scope.rooms
 	    };
     }
 
