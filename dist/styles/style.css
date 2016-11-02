@@ -1,13 +1,13 @@
 * {
- font-family: 'Work Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
 
 body {
     background-color: rgba(63, 81, 181, 1);
 }
 
-.room-list {
-    position: absolute;
+div.sidebar-room-list {
+    position: fixed;
     text-align: center;
     border-radius: 8px;
     padding: 10px 15px 200px 15px;
@@ -16,4 +16,10 @@ body {
 
 th {
     text-decoration: underline;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+button {
+    font-size: 14px;
 }

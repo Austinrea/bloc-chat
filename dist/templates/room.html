@@ -1,5 +1,5 @@
 <section ng-controller="RoomCtrl as roomCtrl">
-    <div class="room-list">
+    <div class="sidebar-room-list">
         <table>
             <tr>
                 <th>Bloc Chat</th>
@@ -8,7 +8,7 @@
                 <td>{{ room }}</td>
             </tr>
         </table>
-        <form class="addRoom" ng-submit="addRoom()">
+        <form class="addRoom" ng-submit="createRoom()">
             <button type="submit">New Room</button>
         </form>
     </div>
