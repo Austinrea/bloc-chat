@@ -1,0 +1,19 @@
+* {
+ font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background-color: rgba(63, 81, 181, 1);
+}
+
+.room-list {
+    position: absolute;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 15px 200px 15px;
+    background-color: rgba(248, 86, 89, 1);
+}
+
+th {
+    text-decoration: underline;
+}
