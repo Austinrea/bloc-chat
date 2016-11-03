@@ -1,5 +1,5 @@
 (function() {
-    function ModalCtrl($uibModalInstance,Room) {
+    function ModalCtrl($uibModalInstance, Room) {
         this.room = Room;
     };
 

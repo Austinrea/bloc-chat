@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: rgba(63, 81, 181, 1);
+    background-color: rgba(62, 96, 111, 1);
 }
 
 div.sidebar-room-list {
@@ -13,7 +13,7 @@ div.sidebar-room-list {
     border-radius: 8px;
     padding: 10px 15px 10px 15px;
     height: 97.5vh;
-    background-color: rgba(248, 86, 89, 1);
+    background-color: rgba(255, 240, 165, 1);
 }
 
 table {
@@ -33,7 +33,7 @@ tr {
 
 button {
     font-size: 14px;
-    background-color: rgba(248, 86, 89, 1);
+    background-color: rgba(255, 240, 165, 1);
     border: 2px solid rgba(51, 51, 51, 1);
     border-radius: 5px;
     transition-duration: 0.4s;
@@ -41,8 +41,8 @@ button {
 }
 
 button:hover {
-    background-color: rgba(63, 81, 181, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: rgba(62, 96, 111, 1);
+    color: rgba(244, 244, 244, 1);
     border: 2px solid rgba(51, 51, 51, 1);
 }
 
