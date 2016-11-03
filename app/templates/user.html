@@ -1,0 +1,12 @@
+<section ng-controller="UserCtrl as ctrl">
+    <div class="user-view">
+        <table>
+            <tr>
+                <th>Bloc Chat</th>
+            </tr>
+            <tr ng-repeat="user in ctrl.user">
+                <td>{{ user }}</td>
+            </tr>
+        </table>
+    </div>
+</section>

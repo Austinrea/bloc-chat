@@ -1,8 +1,9 @@
 <section ng-controller="RoomCtrl as roomCtrl">
     <div class="room-view">
         <table>
-            <tr>
+            <tr ng-click="create in roomCtrl.create">
                 <th>Bloc Chat</th>
+                <td>{{ create }}</td>
             </tr>
             <tr ng-repeat="room in roomCtrl.room.all">
                 <td>{{ room }}</td>
