@@ -1,15 +1,17 @@
 <section ng-controller="RoomCtrl as roomCtrl">
-    <div class="sidebar-room-list">
+	<div class="create-room">
+		<div class="button" ng-controller="ModalCtrl as modal" ng-click="modal.open()">New Room</div>
+	</div>
+
+	<div class="room-view">
+		<br />
         <table>
             <tr>
-                <th>Bloc Chat</th>
+                <div class="open-rooms-title">Rooms</div>
             </tr>
             <tr ng-repeat="room in roomCtrl.room.all">
                 <td>{{ room }}</td>
             </tr>
         </table>
-        <form class="addRoom" ng-submit="createRoom()">
-            <button type="submit">New Room</button>
-        </form>
     </div>
 </section>
