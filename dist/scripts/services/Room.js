@@ -7,7 +7,7 @@
 	        rooms = ["Room 1", "Room 2"];
 	    }
 
-		var create = function(name) {
+		var create = function($scope, name) {
 			var ref = firebase.database().ref().child("rooms");
 			var rooms = $firebaseArray(ref);
 			rooms.$add(name);

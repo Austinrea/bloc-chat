@@ -3,11 +3,11 @@
         <table>
             <tr>
                 <th>Bloc Chat</th>
-                <td>{{ create }}</td>
             </tr>
             <tr ng-repeat="room in roomCtrl.room.all">
                 <td>{{ room }}</td>
             </tr>
+            <button class="btn" ng-click="create()">{{ create }}</button>
         </table>
     </div>
 </section>
