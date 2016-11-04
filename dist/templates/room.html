@@ -7,7 +7,10 @@
             <tr ng-repeat="room in roomCtrl.room.all">
                 <td>{{ room }}</td>
             </tr>
-            <button class="btn" ng-click="create()">{{ create }}</button>
+            <button ng-click="create()">New Room</button>
+            <tr>
+                <td>{{ create }}</td>
+            </tr>
         </table>
     </div>
 </section>
