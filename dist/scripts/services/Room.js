@@ -1,18 +1,21 @@
 (function() {
     function Room($firebaseArray) {
-        var ref = firebase.database().ref();
+        var ref = firebase.database().ref().child("rooms");
         var rooms = $firebaseArray(ref);
 
-        if (rooms.length == 0) {
+	    if (rooms.length == 0) {
 	        rooms = ["Room 1", "Room 2"];
 	    }
 
-        var createRoom = function(room) {
-            rooms.$add(room)
-        }
+		var create = function($scope, name) {
+			var ref = firebase.database().ref().child("rooms");
+			var rooms = $firebaseArray(ref);
+			rooms.$add(name);
+		};
 
         return {
-            all: rooms
+            all: rooms,
+			create: create
 	    };
     }
 
