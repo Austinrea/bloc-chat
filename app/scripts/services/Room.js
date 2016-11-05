@@ -11,7 +11,7 @@
 			var ref = firebase.database().ref().child("rooms");
 			var rooms = $firebaseArray(ref);
 			rooms.$add(roomName);
-		};
+		}
 
         return {
             all: rooms,

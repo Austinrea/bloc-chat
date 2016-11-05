@@ -1,4 +1,4 @@
-<body ng-app="MyApp" ng-controller="MyCtrl">
+<body>
     <form>
         <div modal="showModal" close="cancel()">
             <div class="modal-header">
@@ -6,7 +6,7 @@
             </div>
             <div class="modal-body">
                 <h5>Enter a room name</h5>
-                <input ng-model="newRoom" type="text">
+                <input ng-model="roomName" type="text">
             </div>
             <div class="modal-footer">
                 <button class="btn btn-success" ng-click="modal.close()">Ok</button>
