@@ -10,8 +10,7 @@
                 <div class="open-rooms-title">Chat Rooms</div>
             </tr>
             <tr ng-repeat="room in roomCtrl.room.all">
-                <td>{{ room }}</td>
-                <td>{{ create }}</td>
+                <td>{{ room.$value }}</td>
             </tr>
         </table>
     </div>
