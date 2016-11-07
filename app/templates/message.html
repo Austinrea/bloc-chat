@@ -1,0 +1,11 @@
+<section ng-controller="MessageCtrl as messageCtrl">
+	<div class="list-messages">
+        <h3>{{ room.$value }}</h3>
+		<br />
+        <table>
+            <tr ng-repeat="message in messageCtrl">
+                <td>{{ message.$value }}</td>
+            </tr>
+        </table>
+    </div>
+</section>

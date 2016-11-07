@@ -1,0 +1,28 @@
+(function() {
+    function Message($firebaseArray) {
+        var ref = firebase.database().ref().child("messages");
+        var messages = $firebaseArray(ref);
+
+        messages.$loaded().then(function(messages) {
+            if (messages.length == 0) {
+    	        messages.$add("Hello, how are you?");
+                messages.$add("I'm good thanks.");
+    	    }
+        });
+
+		var create = function($scope, newMessage) {
+			var ref = firebase.database().ref().child("messages");
+			var messages = $firebaseArray(ref);
+			messages.$add(newMessage);
+		}
+
+        return {
+            all: messages,
+			createMessage: createMessage
+	    };
+    }
+
+    angular
+        .module('blocChat')
+        .factory('Message', ['$firebaseArray', Message]);
+})();

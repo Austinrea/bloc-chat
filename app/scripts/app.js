@@ -16,6 +16,11 @@
 			url: '/modal',
 			controller: 'ModalCtrl as modalCtrl',
 			templateUrl: '/templates/modal.html'
+		})
+		  .state('messages', {
+			url: '/message',
+			controller: 'MessageCtrl as messageCtrl',
+			templateUrl: '/templates/message.html'
 		});
 	}
 
