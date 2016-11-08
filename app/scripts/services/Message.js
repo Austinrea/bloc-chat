@@ -10,7 +10,7 @@
     	    }
         });
 
-		var create = function($scope, newMessage) {
+		var createMessage = function($scope, newMessage) {
 			var ref = firebase.database().ref().child("messages");
 			var messages = $firebaseArray(ref);
 			messages.$add(newMessage);
