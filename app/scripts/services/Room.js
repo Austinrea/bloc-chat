@@ -3,12 +3,11 @@
         var ref = firebase.database().ref().child("rooms");
         var rooms = $firebaseArray(ref);
 
-        var activeRoom = function($scope, roomName) {
-            var ref = firebase.database().ref().child("rooms");
-            var rooms = $firebaseArray(ref);
-            $scope.activeRoom = room.$value;
-        }
-
+        // var activeRoom = function($scope, rooms) {
+        //     var ref = firebase.database().ref().child("rooms");
+        //     var rooms = $firebaseArray(ref);
+        //     $scope.activeRoom = room.$value;
+        // }
 
         rooms.$loaded().then(function(rooms) {
             if (rooms.length == 0) {

@@ -1,0 +1,81 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.form-popup {
+	position: absolute;
+    width: 260px;
+	top: 35%;
+	left: 50%;
+	background-color: rgba(216, 216, 216, 1);
+    size: auto;
+	/*font-family: 'Work Sans', sans-serif;*/
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.modal-header {
+    text-align: left;
+    font-size: 1em;
+    padding: 5px 20px 0px 23px;
+	color: rgba(0, 0, 0, 1);
+}
+
+.modal-body {
+    padding: 0px 20px 5px 23px;
+    text-align: left;
+    font-size: 0.8em;
+    text-align: auto;
+}
+
+.input-box {
+    padding: 2px 2px 2px 4px;
+    font-size: 0.8em;
+    width: 82%;
+    display: inline-block;
+    border: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    outline: none;
+}
+
+.modal-footer {
+    margin: 10px 0px 20px 0px ;
+}
+
+.btn {
+	font-size: 0.8em;
+}
+
+.btn {
+    outline: none;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    transition-duration: 0.3s;
+}
+.btn:hover {
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+.btn-success {
+	background-color: rgba(70, 177, 102, 1);
+	border: rgba(70, 177, 102, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 40%;
+}
+
+.btn-dismiss {
+	background-color: rgba(165, 76, 59, 1);
+	border: rgba(165, 76, 59, 1);
+    color: rgba(255, 255, 255, 1);
+    width: 40%;
+}
+
+.btn-success:hover {
+	background-color: rgba(90, 197, 122, 1);
+	border: rgba(90, 197, 122, 1);
+}
+
+.btn-dismiss:hover {
+	background-color: rgba(185, 96, 79, 1);
+	border: rgba(185, 96, 79, 1);
+}

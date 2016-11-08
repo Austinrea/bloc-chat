@@ -1,18 +1,17 @@
-<body>
-    <form>
-        <div modal="showModal" close="cancel()">
-            <div class="modal-header">
-                <h3>Create a new room</h3>
-            </div>
-            <div class="modal-body">
-                <h5>Enter a room name</h5>
-                <input ng-model="roomName" type="text">
-            </div>
-            <br>
-            <div class="modal-footer">
-                <button class="btn btn-success" ng-click="modal.close()">Ok</button>
-                <button class="btn" ng-click="modal.dismiss()">Cancel</button>
-            </div>
-        </div>
-    </form>
-</body>
+<section class="form-popup">
+	<div class="modal-header" ng-controller="ModalCtrl as modal">
+		<h3 class="modal-title" id="modal-title">Create a new room</h3>
+	</div>
+	<div class="modal-body" id="modal-body">
+        Enter a room name<br>
+	</div>
+    <div>
+        <form>
+            <input class="input-box" type="text" ng-model="roomName"><br>
+        </form>
+    </div>
+	<div class="modal-footer">
+		<button class="btn btn-dismiss" type="button" ng-click="modal.dismiss()">Cancel</button>
+        <button class="btn btn-success" type="button" ng-click="modal.close()">Ok</button>
+	</div>
+</section>
