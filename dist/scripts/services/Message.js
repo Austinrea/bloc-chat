@@ -6,7 +6,7 @@
         return {
             getByRoomId: function (roomId) {
                 var ref = firebase.database().ref().child("messages");
-                ref.orderByChild('messages').equalTo(roomId).on("messages") {
+                ref.orderByChild('messages').equalTo(roomId) {
                 });
             }
         };

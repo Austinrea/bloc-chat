@@ -2,7 +2,13 @@
     function Room($firebaseArray) {
         var ref = firebase.database().ref().child("rooms");
         var rooms = $firebaseArray(ref);
-        var setCurrentRoom = "";
+
+        var activeRoom = function($scope, roomName) {
+            var ref = firebase.database().ref().child("rooms");
+            var rooms = $firebaseArray(ref);
+            $scope.activeRoom = room.$value;
+        }
+
 
         rooms.$loaded().then(function(rooms) {
             if (rooms.length == 0) {

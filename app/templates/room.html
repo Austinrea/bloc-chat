@@ -9,7 +9,7 @@
             <tr>
                 <div class="open-rooms-title">Chat Rooms</div>
             </tr>
-            <tr ng-repeat="room in roomCtrl.room.all" ng-click="setCurrentRoom(room.$value)">
+            <tr ng-repeat="room in roomCtrl.room.all" ng-click="activeRoom()">
                 <td>{{ room.$value }}</td>
             </tr>
         </table>
