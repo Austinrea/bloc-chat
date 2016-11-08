@@ -19,7 +19,7 @@
 			} else if ($scope.roomName.length > 12) {
 				alert("Please try again, creating a Room name with maximum 12 characters");
 			} else {
-				this.room.create($scope, $scope.roomName);
+				this.room.createRoom($scope, $scope.roomName);
 				$scope.$close();
 			}
 		};

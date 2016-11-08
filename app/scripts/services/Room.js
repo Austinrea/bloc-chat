@@ -2,6 +2,7 @@
     function Room($firebaseArray) {
         var ref = firebase.database().ref().child("rooms");
         var rooms = $firebaseArray(ref);
+        var setCurrentRoom = "";
 
         rooms.$loaded().then(function(rooms) {
             if (rooms.length == 0) {
@@ -10,7 +11,7 @@
     	    }
         });
 
-		var create = function($scope, roomName) {
+		var createRoom = function($scope, roomName) {
 			var ref = firebase.database().ref().child("rooms");
 			var rooms = $firebaseArray(ref);
 			rooms.$add(roomName);
@@ -18,7 +19,7 @@
 
         return {
             all: rooms,
-			create: create
+			createRoom: createRoom
 	    };
     }
 
