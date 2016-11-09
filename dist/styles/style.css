@@ -15,28 +15,27 @@ body {
 	font-family: 'Work Sans', sans-serif;
 }
 
-div.room-list-view {
+.room-list-view {
     margin:10px 10px 10px 10px;
     position: absolute;
     text-align: center;
-    padding: 10px 15px 10px 15px;
     height: 95%;
     background-color: rgba(216, 216, 216, 1);
 }
 
 .open-rooms-title {
+    padding: 0px 15px 10px 15px;
 	text-align: center;
     text-decoration: underline;
     font-weight: bolder;
     font-size: 22px;
-    padding-bottom: 4px;
 }
 
 table {
 	text-align: center;
 	margin: auto;
+	width: 90%;
 }
-
 
 tr {
 	text-align: center;
@@ -45,7 +44,7 @@ tr {
 
 td {
 	text-align: center;
-	border-bottom: 1px solid rgba(0, 0, 0, 1);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .room-button {
@@ -63,4 +62,10 @@ td {
 	background-color: rgba(90, 197, 122, 1);
 	border: rgba(90, 197, 122, 1);
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+div.message-list-view {
+	width: 90%;
+	height: 90%;
+	background-color: rgba(216, 216, 216, 1);
 }

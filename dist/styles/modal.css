@@ -4,21 +4,22 @@
 
 .form-popup {
 	position: absolute;
-    width: 260px;
+    width: 270px;
 	top: 35%;
 	left: 50%;
 	background-color: rgba(216, 216, 216, 1);
-    size: auto;
-	/*font-family: 'Work Sans', sans-serif;*/
     text-align: center;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
 
-.modal-header {
+.modal-title {
+    width: 220px;
+    height: 20px;
+    margin: 20px 0px 10px 0px;;
     text-align: left;
     font-size: 1em;
-    padding: 5px 20px 0px 23px;
+    padding: 0px 20px 0px 23px;
 	color: rgba(0, 0, 0, 1);
 }
 
@@ -45,9 +46,6 @@
 
 .btn {
 	font-size: 0.8em;
-}
-
-.btn {
     outline: none;
     -webkit-transition-duration: 0.3s; /* Safari */
     transition-duration: 0.3s;
