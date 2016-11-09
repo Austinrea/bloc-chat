@@ -64,8 +64,20 @@ td {
     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.5));
 }
 
-div.message-list-view {
-	width: 90%;
-	height: 90%;
+#message-list-view-box {
+	margin:10px 10px 10px 190px;
+    position: absolute;
+	width: 85%;
+	text-align: left;
+	height: 95%;
 	background-color: rgba(216, 216, 216, 1);
+}
+
+#active-room-title {
+	padding: 10px 15px 10px 15px;
+	text-align: center;
+	text-decoration: underline;
+	font-weight: bolder;
+	font-size: 22px;
+	margin:0px;
 }

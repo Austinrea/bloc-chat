@@ -14,3 +14,14 @@
         </table>
     </div>
 </section>
+<section id="message-list-view-box" ng-controller="MessageCtrl as messageCtrl">
+	<div class="messages-list-view">
+        <h3 id="active-room-title">Active Room Name</h3>
+		<br />
+        <table>
+            <tr ng-repeat="message in messageCtrl">
+                <td>List of messages</td>
+            </tr>
+        </table>
+    </div>
+</section>

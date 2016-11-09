@@ -7,7 +7,7 @@
     width: 270px;
 	top: 35%;
 	left: 50%;
-	background-color: rgba(216, 216, 216, 1);
+    background-color: rgba(70, 90, 110, 1);
     text-align: center;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -20,7 +20,7 @@
     text-align: left;
     font-size: 1em;
     padding: 0px 20px 0px 23px;
-	color: rgba(0, 0, 0, 1);
+	color: rgba(255, 255, 255, 1);
 }
 
 .modal-body {
@@ -28,6 +28,7 @@
     text-align: left;
     font-size: 0.8em;
     text-align: auto;
+    color: rgba(255, 255, 255, 1);
 }
 
 .input-box {
