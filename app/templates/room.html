@@ -8,7 +8,7 @@
             <tr>
                 <div class="open-rooms-title">Chat Rooms</div>
             </tr>
-            <tr ng-repeat="room in roomCtrl.room.all">
+            <tr ng-repeat="room in roomCtrl.room.all" ng-click="room.activeRoom()">
                 <td>{{ room.$value }}</td>
             </tr>
         </table>
@@ -16,11 +16,11 @@
 </section>
 <section id="message-list-view-box" ng-controller="MessageCtrl as messageCtrl">
 	<div class="messages-list-view">
-        <h3 id="active-room-title">Active Room Name</h3>
+        <h3 id="active-room-title">Place active room here</h3>
 		<br />
         <table>
             <tr ng-repeat="message in messageCtrl">
-                <td>List of messages</td>
+                <td>{{ message.all[0].content }}</td>
             </tr>
         </table>
     </div>

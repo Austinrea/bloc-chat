@@ -6,7 +6,7 @@
         var activeRoom = function($scope, rooms) {
             var ref = firebase.database().ref().child("rooms");
             var rooms = $firebaseArray(ref);
-            $scope.activeRoom = room.$value;
+            $scope.activeRoom = rooms;
         };
 
         rooms.$loaded().then(function(rooms) {
@@ -24,7 +24,8 @@
 
         return {
             all: rooms,
-			createRoom: createRoom
+			createRoom: createRoom,
+            activeRoom: activeRoom
 	    };
     }
 

@@ -3,19 +3,17 @@
         var ref = firebase.database().ref().child("messages");
         var messages = $firebaseArray(ref);
 
-        return {
-            getByRoomId: function (roomId) {
+        var getByRoomId = function (roomId) {
                 var ref = firebase.database().ref().child("messages");
-                ref.orderByChild('messages').equalTo(roomId);
-            }
+                ref.orderByChild("roomId").on("messages").equalTo("-KVuUf6HnQakv812C3Al");
         };
 
-        messages.$loaded().then(function(messages) {
-            if (messages.length == 0) {
-    	        messages.$add("Hey, how're you doing?");
-                messages.$add("I'm good thanks.");
-    	    }
-        });
+        // messages.$loaded().then(function(messages) {
+        //     if (messages.length == 0) {
+    	//         messages.$add("Hey, how're you doing?");
+        //         messages.$add("I'm good thanks.");
+    	//     }
+        // });
 
 		var createMessage = function($scope, newMessage) {
 			var ref = firebase.database().ref().child("messages");
