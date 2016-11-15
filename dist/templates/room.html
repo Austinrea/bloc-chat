@@ -14,13 +14,13 @@
         </table>
     </div>
 
-	<section id="message-list-view-box" ng-controller="MessageCtrl as messageCtrl">
+	<section id="message-list-view-box">
 		<div class="messages-list-view">
 			<h3 id="active-room-title">{{ roomCtrl.activeRoom.$value }}</h3>
 			<br />
 	        <table>
-	            <tr ng-repeat="message in messageCtrl">
-	                <td>{{ message.all[0].content }}</td>
+	            <tr ng-repeat="message in roomCtrl.message.all">
+	                <td>{{ message.content }}</td>
 	            </tr>
 	        </table>
 	    </div>

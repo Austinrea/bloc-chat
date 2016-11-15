@@ -4,8 +4,7 @@
         var messages = $firebaseArray(ref);
 
         var getByRoomId = function (roomId) {
-                var ref = firebase.database().ref().child("messages");
-                ref.orderByChild("roomId").on("messages").equalTo("-KWF1MsBFDFyF2mpAhx2");
+            return $firebaseArray(ref.orderByChild("roomId").equalTo(roomId));
         };
 
         // messages.$loaded().then(function(messages) {
@@ -22,8 +21,9 @@
 		}
 
         return {
-            all: messages,
-			createMessage: createMessage
+            //all: messages,
+			createMessage: createMessage,
+            getByRoomId: getByRoomId
 	    };
     }
 
