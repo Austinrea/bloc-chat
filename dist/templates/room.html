@@ -1,9 +1,9 @@
 <section ng-controller="RoomCtrl as roomCtrl">
 	<div class="room-list-view">
 		<div class="create-room">
-			<button class="room-button" ng-controller="ModalCtrl as modal" ng-click="modal.open()">New Room</button>
+			<button class="room-button" type="button" ng-controller="ModalCtrl as modal" ng-click="modal.open()">New Room</button>
 		</div>
-		<table>
+		<table id="room-table">
 			<br>
             <tr>
                 <div class="open-rooms-title">Chat Rooms</div>
@@ -18,7 +18,7 @@
 		<div class="messages-list-view">
 			<h3 id="active-room-title">{{ roomCtrl.activeRoom.$value }}</h3>
 			<br />
-	        <table>
+	        <table id="message-table">
 	            <tr ng-repeat="message in roomCtrl.message.all">
 	                <td>{{ message.content }}</td>
 	            </tr>
