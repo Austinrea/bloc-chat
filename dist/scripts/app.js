@@ -7,14 +7,19 @@
 		});
 
 		$stateProvider
-		.state('rooms', {
+		  .state('rooms', {
 			url: '/',
 			controller: 'RoomCtrl as roomCtrl',
 			templateUrl: '/templates/room.html'
+		})
+		  .state('modal', {
+			url: '/modal',
+			controller: 'ModalCtrl as modalCtrl',
+			templateUrl: '/templates/modal.html'
 		});
 	}
 
 	angular
-		.module('blocChat', ['firebase', 'ui.router'])
+		.module('blocChat', ['firebase', 'ui.router', 'ui.bootstrap'])
 		.config(config);
 })();

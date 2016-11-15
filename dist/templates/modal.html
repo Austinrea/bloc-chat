@@ -1,0 +1,17 @@
+<body>
+    <form>
+        <div modal="showModal" close="cancel()">
+            <div class="modal-header">
+                <h3>Create a new room</h3>
+            </div>
+            <div class="modal-body">
+                <h5>Enter a room name</h5>
+                <input ng-model="roomName" type="text">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" ng-click="modal.close()">Ok</button>
+                <button class="btn" ng-click="modal.dismiss()">Cancel</button>
+            </div>
+        </div>
+    </form>
+</body>

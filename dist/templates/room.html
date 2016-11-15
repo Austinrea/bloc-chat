@@ -1,11 +1,16 @@
 <section ng-controller="RoomCtrl as roomCtrl">
-    <div class="room-view">
+	<div class="create-room">
+		<button class="button" ng-controller="ModalCtrl as modal" ng-click="modal.open()">New Room</button>
+	</div>
+
+	<div class="room-view">
+		<br />
         <table>
             <tr>
-                <th>Bloc Chat</th>
+                <div class="open-rooms-title">Chat Rooms</div>
             </tr>
             <tr ng-repeat="room in roomCtrl.room.all">
-                <td>{{ room }}</td>
+                <td>{{ room.$value }}</td>
             </tr>
         </table>
     </div>
