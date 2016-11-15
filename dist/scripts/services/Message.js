@@ -5,7 +5,7 @@
 
         var getByRoomId = function (roomId) {
                 var ref = firebase.database().ref().child("messages");
-                ref.orderByChild("roomId").on("messages").equalTo("-KVuUf6HnQakv812C3Al");
+                ref.orderByChild("roomId").on("messages").equalTo("-KWF1MsBFDFyF2mpAhx2");
         };
 
         // messages.$loaded().then(function(messages) {

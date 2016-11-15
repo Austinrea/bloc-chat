@@ -16,9 +16,7 @@
 
 	<section id="message-list-view-box" ng-controller="MessageCtrl as messageCtrl">
 		<div class="messages-list-view">
-			<section id="active-room">
-			    <h3 id="active-room-title">{{ roomCtrl.activeRoom.$value }}</h3>
-			</section>
+			<h3 id="active-room-title">{{ roomCtrl.activeRoom.$value }}</h3>
 			<br />
 	        <table>
 	            <tr ng-repeat="message in messageCtrl">
